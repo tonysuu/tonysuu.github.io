@@ -1,0 +1,9 @@
+#name {
+	color:gray;
+	font-family: 'Century Gothic';
+}
+
+#nav li {
+	display: inline-block;
+	margin-right: 5px;	
+}
