@@ -1,9 +1,40 @@
+#header {
+    /*background-color: #808080;*/
+    background-color: black;
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
 #name {
-	color:gray;
-	font-family: 'Century Gothic';
+    color: #FFFFFF;
+    font-family: serif;
+    font-size: 60px;
+    text-align: center;
+    padding: 5px;
+}
+#navbar ul {
+    text-align: center;
+}
+#navbar ul li {
+    display: inline-block;
+    padding: 3px;
 }
 
-#nav li {
-	display: inline-block;
-	margin-right: 5px;	
+.icon {
+    /*#66CCFF*/
+    background-color:#66CCFF;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.7;
+}
+.icon a {
+    color: black;
+}
+.icon a:hover {
+    color: white;
 }
