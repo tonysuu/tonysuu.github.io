@@ -45,5 +45,8 @@ i {
     color: white;
 }
 #menu-nav {
-    width: 95%;
+    width: 78%;
+}
+#menu-icon {
+    margin-left: 20px;
 }
