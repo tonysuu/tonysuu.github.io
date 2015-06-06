@@ -21,6 +21,9 @@
     display: inline-block;
     padding: 3px;
 }
+#navbar div {
+    display: inline-block;
+}
 
 .icon {
     /*#66CCFF*/
@@ -37,4 +40,10 @@
 }
 .icon a:hover {
     color: white;
+}
+i {
+    color: white;
+}
+#menu-nav {
+    width: 95%;
 }
