@@ -65,6 +65,8 @@ i {
 }
 .menu ul {
     list-style: none;
+    margin-right: 45px;
+    margin-top: 230px;
 }
 .menu li {
     border-bottom: 1px solid gray;
