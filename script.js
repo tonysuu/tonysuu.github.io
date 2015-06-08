@@ -10,7 +10,7 @@ $(document).ready(function () {
     //display menu
     $('#menu-icon').click(function () {
         $('body').animate({
-            left: "300px"
+            left: "400px"
         }, 200);
         $('.menu').animate({
             left: "0px"
@@ -22,7 +22,7 @@ $(document).ready(function () {
             left: "0px"
         },200);
         $('.menu').animate({
-            left: "-300px"
+            left: "-400px"
         },200);
     });
 });

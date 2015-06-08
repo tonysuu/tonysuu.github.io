@@ -55,11 +55,13 @@ i {
     margin-left: 20px;
 }
 .menu {
-    background-color: black;
+    background-image: url("menu_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: fixed;
     height: 100%;
-    width: 300px;
-    left: -300px;
+    width: 400px;
+    left: -400px;
 }
 .menu ul {
     list-style: none;
