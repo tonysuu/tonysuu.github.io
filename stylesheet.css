@@ -55,7 +55,7 @@ i {
     margin-left: 20px;
 }
 .menu {
-    background-image: url("menu_background.jpg");
+    background-image: url("img/menu_background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: fixed;
