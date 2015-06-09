@@ -85,3 +85,10 @@ i {
     font-size: 30px;
     color: #0066FF;
 }
+#close-icon {
+    height: 80px;
+    width: 80px;
+    background-color: none;
+    margin-left: 2em;
+    margin-top: 4em;
+}
