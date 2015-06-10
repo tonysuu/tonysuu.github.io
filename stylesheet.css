@@ -103,3 +103,7 @@ i {
     height: 60%;
     width: 100%;
 }
+div a p {
+    padding-left: 30px;
+    font-size: 15px;
+}
