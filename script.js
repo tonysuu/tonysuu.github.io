@@ -17,7 +17,7 @@ $(document).ready(function () {
         }, 200);
     });
     //close menu
-    $("#exit").click(function () {
+    $('#close-image').click(function () {
         $('body').animate({
             left: "0px"
         },200);
@@ -25,4 +25,5 @@ $(document).ready(function () {
             left: "-400px"
         },200);
     });
+    $('#menu-list').accordion({ collapsible: true, active: false});
 });
