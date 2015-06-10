@@ -15,6 +15,7 @@ $(document).ready(function () {
         $('.menu').animate({
             left: "0px"
         }, 200);
+        //location.assign("index.html");
     });
     //close menu
     $('#close-image').click(function () {
@@ -25,5 +26,14 @@ $(document).ready(function () {
             left: "-400px"
         },200);
     });
-    $('#menu-list').accordion({ collapsible: true, active: false});
+    $('#accordion').accordion({ collapsible: true, active: false});
+    //first item
+    $('#ui-id-1').unbind("click");
+    $('#ui-id-1').click(function () {
+        location.assign("index.html");
+    });
+    //resume tab
+    $('#resume').unbind("click");
+    //contacts tab
+    $('#contact').unbind("click");
 });
