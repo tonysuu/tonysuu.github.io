@@ -36,4 +36,8 @@ $(document).ready(function () {
     $('#resume').unbind("click");
     //contacts tab
     $('#contact').unbind("click");
+
+    /*$('#content').mouseenter(function () {
+        
+    });*/
 });
