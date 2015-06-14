@@ -1,4 +1,8 @@
 // JavaScript source code
+if (navigator.userAgent.indexOf("Chrome") < 0 && navigator.userAgent.indexOf("Firefox") < 0) {
+    alert("This website is optimized for Chrome and Firefox, some functionalities may not work in IE");
+}
+
 $(document).ready(function () {
     //highlight icon
     $('.icon').mouseenter(function () {
