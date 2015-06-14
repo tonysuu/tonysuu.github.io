@@ -13,7 +13,7 @@ body {
 }
 #name {
     color: #FFFFFF;
-    font-family: serif;
+    font-family: 'Century Gothic',serif;
     font-size: 60px;
     text-align: center;
     padding: 5px;
@@ -22,6 +22,7 @@ body {
     text-align: center;
 }
 #navbar ul li {
+    font-family: 'Century Gothic',serif;
     display: inline-block;
     padding: 3px;
 }
@@ -70,7 +71,7 @@ i {
 }
 .menu li {
     border-bottom: 1px solid gray;
-    font-family: serif;
+    font-family: 'Century Gothic',serif;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -81,6 +82,7 @@ i {
 }
 .menu a {
     color: white;
+    font-family: 'Century Gothic', serif;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 25px;
