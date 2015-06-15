@@ -1,11 +1,57 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/icon">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="icon" href="http://www.tonysu.me/favicon.ico" type="image/icon">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <title>Tony Su - Resume</title>
 </head>
 <body>
-
+    <div class="menu">
+        <div id="close-button"><div id="close-image"><img src="img/close_icon.png" /></div></div>
+        <div id="menu-list">
+            <div id="accordion">
+                <h3><a>Home</a></h3>
+                <div></div>
+                <h3><a>Projects</a></h3>
+                <div>
+                    <a href="http://google.ca"><p>project1</p></a>
+                    <a href="http://google.com"><p>project2</p></a>
+                    <a><p>project3</p></a>
+                </div>
+                <h3 id="resume"><a>Resume</a></h3>
+                <div></div>
+                <h3 id="contact"><a>Contact Me</a></h3>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div id="name">Projects</div>
+        <div id="navbar">
+            <div id="menu-icon"><i class="fa fa-bars fa-3x"> MENU</i></div>
+            <div id="menu-nav">
+                <ul>
+                    <li><div class="icon"><a href="index.html" class="link">Home</a></div></li>
+                    <li><div class="icon"><a href="projects.html" class="link">Projects</a></div></li>
+                    <li><div class="icon"><a href="resume.html" class="link">Resume</a></div></li>
+                    <li><div class="icon"><a href="#" class="link">Contact</a></div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+    </div>
+    <div id="footer">
+        <div id="footer-content">
+            Github | LinkIn | Email <br />
+            &#169 2015 Tony Su. All Rights Reserved.
+        </div>
+    </div>
+    <script type='text/javascript' src='script.js'></script>
 </body>
 </html>
