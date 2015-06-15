@@ -6,10 +6,14 @@ if (navigator.userAgent.indexOf("Chrome") < 0 && navigator.userAgent.indexOf("Fi
 $(document).ready(function () {
     //highlight icon
     $('.icon').mouseenter(function () {
-        $(this).fadeTo("fast", 1);
+        /*$(this).fadeTo("fast", 1);*/
+        $(this).css("background-color","white");
+        $('a',this).css("color","black");
     });
     $('.icon').mouseleave(function () {
-        $(this).fadeTo("fast",0.7);
+        /*$(this).fadeTo("fast",0.7);*/
+        $(this).css("background-color","gray");
+        $('a',this).css("color","white");
     });
     //display menu
     $('#menu-icon').click(function () {
@@ -42,6 +46,6 @@ $(document).ready(function () {
     $('#contact').unbind("click");
 
     /*$('#content').mouseenter(function () {
-        
+
     });*/
 });

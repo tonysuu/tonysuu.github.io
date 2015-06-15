@@ -4,7 +4,7 @@ body {
 }
 #header {
     /*background-color: #808080;*/
-    background-color: black;
+    background-color: gray;
     position: relative;
     height: auto;
     width: 100%;
@@ -32,7 +32,7 @@ body {
 
 .icon {
     /*#66CCFF*/
-    background-color:#66CCFF;
+    background-color: gray;
     width: 200px;
     height: 50px;
     border-radius: 5px;
@@ -41,10 +41,11 @@ body {
     opacity: 0.7;
 }
 .icon a {
-    color: black;
+    color: white;
 }
 .icon a:hover {
-    color: white;
+    color: black;
+    text-decoration: underline;
 }
 i {
     color: white;
