@@ -140,3 +140,19 @@ iframe {
     color: white;
     font-size: 15px;
 }
+#content-container {
+    height: auto;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+#title {
+    font-family: 'Century Gothic', serif;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+}
+#content-container p {
+    font-family: 'Century Gothic', serif;
+    font-size: 20px;
+}
