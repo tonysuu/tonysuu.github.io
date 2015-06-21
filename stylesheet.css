@@ -1,6 +1,8 @@
 body {
     left: 0px;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 #header {
     /*background-color: #808080;*/
@@ -165,4 +167,13 @@ p {
 #footer a:hover {
     color: black;
     text-decoration: underline;
+}
+#intro {
+    width: 100%;
+    height: auto;
+}
+#running {
+    position: absolute;
+    /*float: right;*/
+    right: -200px;
 }
