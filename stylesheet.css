@@ -1,6 +1,7 @@
 body {
     left: 0px;
     position: relative;
+    overflow-x: hidden;
 }
 #header {
     /*background-color: #808080;*/
@@ -130,6 +131,7 @@ div a:hover {
 #content {
     width: 100%;
     height: auto;
+        padding-bottom:80px;
 }
 iframe {
     width: 100%;
@@ -178,7 +180,7 @@ p {
 table {
     width: 100%;
     background-color: blue;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 td {
     border: 2px solid yellow;
@@ -189,4 +191,7 @@ td {
 }
 .image_container {
     width: 155px;
+}
+td {
+    vertical-align: top;
 }
