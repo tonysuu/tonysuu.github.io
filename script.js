@@ -44,6 +44,7 @@ $(document).ready(function () {
     $('#resume').unbind("click");
     //contacts tab
     $('#contact').unbind("click");
+
     function moveToLeft(width) {
         $('#running').animate({
             right: "+="+width+"px"
@@ -55,5 +56,6 @@ $(document).ready(function () {
         }, 0, moveToLeft($('body').width()));
     }
     moveToLeft($('body').width());
+    
 });
 
