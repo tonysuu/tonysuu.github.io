@@ -181,14 +181,20 @@ table {
     margin-top: 50px;
 }
 td {
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
 }
 .image_container {
     width: 155px;
 }
 td {
     vertical-align: top;
+}
+h2 {
+    margin-top: 0px;
+}
+h2:hover{
+    color: #7e7e7e;
 }
