@@ -160,6 +160,7 @@ iframe {
 }
 p {
     line-height: 2;
+    font-family: 'Century Gothic', serif;
 }
 #footer a {
     color: white;
@@ -197,4 +198,18 @@ h2 {
 }
 h2:hover{
     color: #7e7e7e;
+    font-family: 'Century Gothic', serif;
+}
+td p {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.demo {
+    color: #66CCFF;
+    font-weight: bold;
+    margin-left: 10em;
+}
+p span {
+    color: #66CCFF;
+    font-weight: bold;
 }
