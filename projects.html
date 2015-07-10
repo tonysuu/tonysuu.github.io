@@ -8,118 +8,127 @@
     <link rel="icon" href="http://www.tonysu.me/favicon.ico" type="image/icon">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <title>Tony Su - Resume</title>
+    <title>Tony Su - Projects</title>
 </head>
-<body>
-    <div class="menu">
-        <div id="close-button"><div id="close-image"><img src="img/close_icon.png" /></div></div>
-        <div id="menu-list">
-            <div id="accordion">
-                <h3><a>Home</a></h3>
-                <div></div>
-                <h3><a>Projects</a></h3>
-                <div>
-                    <a href="http://google.ca"><p>project1</p></a>
-                    <a href="http://google.com"><p>project2</p></a>
-                    <a><p>project3</p></a>
+<body style="overflow-x:hidden">
+    <div id="page_content">
+        <div class="menu">
+            <div id="close-button"><div id="close-image"><img src="img/close_icon.png" /></div></div>
+            <div id="menu-list">
+                <div id="accordion">
+                    <h3><a>Home</a></h3>
+                    <div></div>
+                    <h3><a>Projects</a></h3>
+                    <div>
+                        <a href="http://google.ca"><p>project1</p></a>
+                        <a href="http://google.com"><p>project2</p></a>
+                        <a><p>project3</p></a>
+                    </div>
+                    <h3 id="resume"><a>Resume</a></h3>
+                    <div></div>
+                    <h3 id="contact"><a>Contact Me</a></h3>
+                    <div></div>
                 </div>
-                <h3 id="resume"><a>Resume</a></h3>
-                <div></div>
-                <h3 id="contact"><a>Contact Me</a></h3>
-                <div></div>
+            </div>
+        </div>
+        <div id="header">
+            <div id="name">Projects</div>
+            <div id="navbar">
+                <div id="menu-icon"><i class="fa fa-bars fa-3x"> MENU</i></div>
+                <div id="menu-nav">
+                    <ul>
+                        <li><div class="icon"><a href="index.html" class="link">Home</a></div></li>
+                        <li><div class="icon"><a href="projects.html" class="link">Projects</a></div></li>
+                        <li><div class="icon"><a href="resume.html" class="link">Resume</a></div></li>
+                        <li><div class="icon"><a href="#" class="link">Contact</a></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <table>
+                <tr>
+                    <td class="image_container">
+                        <a><img src="img/tic.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                    </td>
+                    <td>
+                        <h2>Tic Tac Toe</h2>
+                        <p>
+                            This is a recreation of one of the most popular games Tic-Tac-Toe. Written in Java, this 2-player game allows players to interact with the game board, which consists of JPanel and JFrame, through mouse clicks.
+                            Concepts of inheritance, polymorphism and interfaces were implemented to make this game.
+                        </p>
+                        <br />
+                        <p>
+                            <span><a onclick="show('ttt','ttta.jar','tictactoe.TicTacToe.class',450,450);">Click here to see the demo!</a></span>
+                            <span class="demo">
+                                <a href="https://github.com/tonysuu/TicTacToe" target="_blank">Check it out on Github!</a>
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="image_container">
+                        <a href="#"><img src="img/website.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                    </td>
+                    <td>
+                        <h2>Personal Website</h2>
+                        <p>Project 2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="image_container">
+                        <a href="#"><img onclick="show('ttt','bouncinga.jar','bouncing.game.class',600,600);" src="img/bouncing.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                    </td>
+                    <td>
+                        <h2>Brick Breaker</h2>
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="image_container">
+                        <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                    </td>
+                    <td>
+                        <p>Android development</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="image_container">
+                        <a href="#"><img src="img/calc.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                    </td>
+                    <td>
+                        <p>Universal Calculator</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="image_container">
+                        <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                    </td>
+                    <td>
+                        <p>Project 6</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="image_container">
+                        <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                    </td>
+                    <td>
+                        <p>Project 7</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="footer">
+            <div id="footer-content">
+                Github | LinkIn | Email <br />
+                &#169 2015 Tony Su. All Rights Reserved.
             </div>
         </div>
     </div>
-    <div id="header">
-        <div id="name">Projects</div>
-        <div id="navbar">
-            <div id="menu-icon"><i class="fa fa-bars fa-3x"> MENU</i></div>
-            <div id="menu-nav">
-                <ul>
-                    <li><div class="icon"><a href="index.html" class="link">Home</a></div></li>
-                    <li><div class="icon"><a href="projects.html" class="link">Projects</a></div></li>
-                    <li><div class="icon"><a href="resume.html" class="link">Resume</a></div></li>
-                    <li><div class="icon"><a href="#" class="link">Contact</a></div></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="content">
-        <table>
-            <tr>
-                <td class="image_container">
-                    <a href="#"><img src="img/tic.png" style="height: 175px; width: 175px; vertical-align: middle"/></a>
-                </td>
-                <td>
-                    <h2>Tic Tac Toe</h2>
-                    <p>This is a recreation of one of the most popular games Tic-Tac-Toe. Written in Java, this 2-player game allows players to interact with the game board, which consists of JPanel and JFrame, through mouse clicks.  
-                        Concepts of inheritance, polymorphism and interfaces were implemented to make this game.
-                    </p>
-                    <br />
-                    <p>
-                        <span><a>Click here to see the demo!</a></span>
-                        <span class="demo">
-                            <a href="https://github.com/tonysuu/TicTacToe">Check it out on Github!</a>
-                        </span>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td class="image_container">
-                    <a href="#"><img src="img/website.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
-                </td>
-                <td>
-                    <h2>Personal Website</h2>
-                    <p>Project 2</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="image_container">
-                    <a href="#"><img src="img/bouncing.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
-                </td>
-                <td>
-                    <h2>Brick Breaker</h2>
-                    <p></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="image_container">
-                    <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
-                </td>
-                <td>
-                    <p>Android development</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="image_container">
-                    <a href="#"><img src="img/calc.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
-                </td>
-                <td>
-                    <p>Universal Calculator</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="image_container">
-                    <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
-                </td>
-                <td>
-                    <p>Project 6</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="image_container">
-                    <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
-                </td>
-                <td>
-                    <p>Project 7</p>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div id="footer">
-        <div id="footer-content">
-            Github | LinkIn | Email <br />
-            &#169 2015 Tony Su. All Rights Reserved.
+    <div id="overlay">
+        <div id="overlay_content" style="position:relative">
+            <div id="applet_close"><a style="font-size: 70px; text-decoration:none" onclick="hide();">&times;</a></div>
+            <div id="applet_container"></div>
         </div>
     </div>
     <script type='text/javascript' src='script.js'></script>

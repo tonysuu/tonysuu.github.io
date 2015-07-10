@@ -1,12 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" style="height: 100%">
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/icon">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <script type='text/javascript' src='script.js'></script>
 </head>
-<body>
-    <applet code="bouncing.game.class" height="600" width="600" archive="bouncinga.jar">
-    </applet>
+<body style="height:100%">
+    <div id="page_content" style="z-index: 1"  onclick="show();">
+    </div>
+    <div id="overlay">
+        <div id="demo">
+            <a onclick="hide()" style="font-size: 70px">&times;</a>
+            <applet code="tictactoe.TicTacToe.class" height="450" width="450" archive="ttta.jar">
+            </applet>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,7 +1,11 @@
+html {
+    height: 100%;
+}
 body {
     left: 0px;
     position: relative;
     overflow-x: hidden;
+    height: 100%;
 }
 #header {
     /*background-color: #808080;*/
@@ -131,7 +135,7 @@ div a:hover {
 #content {
     width: 100%;
     height: auto;
-        padding-bottom:80px;
+    padding-bottom:80px;
 }
 iframe {
     width: 100%;
@@ -212,4 +216,21 @@ td p {
 p span {
     color: #66CCFF;
     font-weight: bold;
+}
+#overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+    background-color: #c0c0c0;
+    visibility: hidden;
+}
+#page_content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
 }
