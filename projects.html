@@ -47,15 +47,15 @@
         </div>
         <div id="content">
             <table>
-                <tr>
+                <tr id="ttt_row">
                     <td class="image_container">
                         <a><img src="img/tic.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
                         <h2>Tic Tac Toe</h2>
                         <p>
-                            This is a recreation of one of the most popular games Tic-Tac-Toe. Written in Java, this 2-player game allows players to interact with the game board, which consists of JPanel and JFrame, through mouse clicks.
-                            Concepts of inheritance, polymorphism and interfaces were implemented to make this game.
+                            This is a recreation of one of the most popular games Tic-Tac-Toe. Written in Java, this 2-player game allows players to interact with the game board, which consists of JPanel and JFrame, through mouse clicks. 
+                            Concepts of inheritance, polymorphism and interfaces were implemented to make this game. 
                         </p>
                         <br />
                         <p>
@@ -68,28 +68,35 @@
                 </tr>
                 <tr>
                     <td class="image_container">
-                        <a href="#"><img src="img/website.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                        <a href="https://github.com/timmui/MType" target="_blank"><img src="img/mtype.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
-                        <h2>Personal Website</h2>
-                        <p>Project 2</p>
+                        <h2>MType</h2>
+                        <p>MType is a messaging application that uses morse code as input for wearables such as the Pebble smartwatch and the Intel Edison to write messages 
+                           that can be sent to a server hosted on Microsoft Azure via a custom REST webservice. Devices can then obtain messages sent to their inbox from the server. 
+                           Compatible with: <span>Pebble Smartwatch</span>, <span>Android</span> and <span>Intel Edison.</span><br />
+                           <span><a href="https://github.com/timmui/MType" target="_blank">Check it out on Github!</a></span>
+                        </p>
                     </td>
                 </tr>
                 <tr>
                     <td class="image_container">
-                        <a href="#"><img onclick="show('ttt','bouncinga.jar','bouncing.game.class',600,600);" src="img/bouncing.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                        <a><img onclick="show('bouncing','bouncinga.jar','bouncing.game.class',600,600);" src="img/bouncing.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
                         <h2>Brick Breaker</h2>
-                        <p></p>
+                        <p>
+                            This game 
+                        </p>
                     </td>
                 </tr>
-                <tr>
+                <tr id="android_row">
                     <td class="image_container">
-                        <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                        <a href="#"><img src="img/android.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
-                        <p>Android development</p>
+                        <h2>Android Development</h2>
+                        <p>Android Development</p>
                     </td>
                 </tr>
                 <tr>
@@ -126,10 +133,11 @@
         </div>
     </div>
     <div id="overlay">
-        <div id="overlay_content" style="position:relative">
-            <div id="applet_close"><a style="font-size: 70px; text-decoration:none" onclick="hide();">&times;</a></div>
-            <div id="applet_container"></div>
+        <div id="overlay_content" style="width: 100%; height: auto">
+            <div id="applet_close" style="position: relative"><a style="font-size: 70px; text-decoration:none" onclick="hide();">&times;</a></div>
+            <div id="applet_container" style="position: relative"></div>
         </div>
+        <div id="download_applet" style="text-align:center"><a style="font-size: 30px">Click here to download the JAR file.</a></div>
     </div>
     <script type='text/javascript' src='script.js'></script>
 </body>

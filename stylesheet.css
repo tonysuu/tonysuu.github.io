@@ -125,7 +125,7 @@ div a:hover {
 #footer {
     bottom: 0px;
     height: auto;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -214,7 +214,7 @@ td p {
     margin-left: 10em;
 }
 p span {
-    color: #66CCFF;
+    color: #337AB7;
     font-weight: bold;
 }
 #overlay {

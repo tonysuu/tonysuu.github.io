@@ -6,16 +6,18 @@ if (navigator.userAgent.indexOf("Chrome") < 0 && navigator.userAgent.indexOf("Fi
 }
 var hide = function () {
     document.getElementById('applet_container').removeChild(document.getElementById(appletId));
-    document.getElementById('overlay').style.zIndex = -1;
-    document.getElementById('overlay').style.visibility = "hidden";
+    var overlay = document.getElementById('overlay');
+    overlay.style.zIndex = -1;
+    overlay.style.visibility = "hidden";
 }
-var show = function (id,arcName,clsName,height,width) {
-    document.getElementById('overlay').style.zIndex = 1;
-    document.getElementById('overlay').style.visibility = "visible";
-    var top = window.innerHeight / 2 - height / 2;
+var show = function (id, arcName, clsName, height, width) {
+    var overlay = document.getElementById('overlay');
+    overlay.style.zIndex = 1;
+    overlay.style.visibility = "visible";
+    var top = $(window).height() / 2 - height / 2 - $('#applet_close').height() + $(window).scrollTop();
     var left = window.innerWidth / 2 - width / 2;
-    document.getElementById('overlay_content').style.top = top + "px";
-    document.getElementById('overlay_content').style.left = left + "px";
+    var top1 = $(window).scrollTop();
+    //alert(window.innerHeight + " " + window.innerWidth + " jquery" + top1);
     var app = document.createElement('applet');
     app.archive = arcName;
     app.id = id;
@@ -24,6 +26,20 @@ var show = function (id,arcName,clsName,height,width) {
     app.height = height;
     app.width = width;
     document.getElementById('applet_container').appendChild(app);
+    appletCentre(top, left, height);
+}
+var appletCentre = function (top, left, height) {
+    var appletClose = document.getElementById('applet_close');
+    appletClose.style.top = top + "px";
+    appletClose.style.left = left + "px";
+
+    var appletContainer = document.getElementById('applet_container');
+    appletContainer.style.top = top + "px";
+    appletContainer.style.left = left + "px";
+    var closeButtonHeight = $('#applet_close').height();
+    document.getElementById('overlay_content').style.height = (top + height + closeButtonHeight) + "px";
+    //document.getElementById('overlay_content').style.position = "fixed";
+
 }
 $(document).ready(function () {
     //highlight icon
@@ -80,5 +96,12 @@ $(document).ready(function () {
         }, 0, moveToLeft($('body').width()));
     }
     moveToLeft($('body').width());
+    
+    $('#download_applet').click(function () {
+        var name = appletId + ".jar";
+        //alert(name);
+        location.assign(name);
+    });
+    //$('body').effect('highlight', {},1000);
 });
 
