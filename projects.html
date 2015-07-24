@@ -20,9 +20,12 @@
                     <div></div>
                     <h3><a>Projects</a></h3>
                     <div>
-                        <a href="http://google.ca"><p>project1</p></a>
-                        <a href="http://google.com"><p>project2</p></a>
-                        <a><p>project3</p></a>
+                        <a href="projects.html#ttt_row"><p>Tic Tac Toe</p></a>
+                        <a href="projects.html#mtype_row"><p>MType</p></a>
+                        <a href="projects.html#brick_row"><p>Brick Breaker</p></a>
+                        <a href="projects.html#android_row"><p>Android Applicatoins</p></a>
+                        <a href="projects.html#calculator_row"><p>Universal Calculator</p></a>
+                        <a href="projects.html#others_row"><p>Others</p></a>
                     </div>
                     <h3 id="resume"><a>Resume</a></h3>
                     <div></div>
@@ -49,7 +52,7 @@
             <table>
                 <tr id="ttt_row">
                     <td class="image_container">
-                        <a><img src="img/tic.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                        <a onclick="show('ttt','ttta.jar','tictactoe.TicTacToe.class',450,450);"><img src="img/tic.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
                         <h2>Tic Tac Toe</h2>
@@ -66,7 +69,7 @@
                         </p>
                     </td>
                 </tr>
-                <tr>
+                <tr id="mtype_row">
                     <td class="image_container">
                         <a href="https://github.com/timmui/MType" target="_blank"><img src="img/mtype.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
@@ -74,19 +77,26 @@
                         <h2>MType</h2>
                         <p>MType is a messaging application that uses morse code as input for wearables such as the Pebble smartwatch and the Intel Edison to write messages 
                            that can be sent to a server hosted on Microsoft Azure via a custom REST webservice. Devices can then obtain messages sent to their inbox from the server. 
-                           Compatible with: <span>Pebble Smartwatch</span>, <span>Android</span> and <span>Intel Edison.</span><br />
+                           Compatible with: <strong>Pebble Smartwatch</strong>, <strong>Android</strong> and <strong>Intel Edison.</strong><br />
                            <span><a href="https://github.com/timmui/MType" target="_blank">Check it out on Github!</a></span>
                         </p>
                     </td>
                 </tr>
-                <tr>
+                <tr id="brick_row">
                     <td class="image_container">
                         <a><img onclick="show('bouncing','bouncinga.jar','bouncing.game.class',600,600);" src="img/bouncing.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
                         <h2>Brick Breaker</h2>
                         <p>
-                            This game 
+                            A recreation of the classic mobile game Brick Breaker. The player must smash a wall of bricks by deflecting a bouncing ball of a paddle. Brick Breaker was written in Java.
+                        </p>
+                        <br />
+                        <p>
+                            <span><a onclick="show('bouncing','bouncinga.jar','bouncing.game.class',600,600);">Click here to see the demo!</a></span>
+                            <span class="demo">
+                                <a href="https://github.com/tonysuu/Brick-Breaker" target="_blank">Check it out on Github!</a>
+                            </span>
                         </p>
                     </td>
                 </tr>
@@ -96,38 +106,64 @@
                     </td>
                     <td>
                         <h2>Android Development</h2>
-                        <p>Android Development</p>
+                        <p>Experience in Android Development through various personal and school projects.<br />
+                            <ul style="font-size:1.15em">
+                                <li>Integrated map with custom step checker and compass that use built-in sensors such as orientation, accelerometer, magnetic and gyroscope. Input sensor data was processed with a series of low pass filters.</li>
+                                <li>WakeUp- This app uses the Myo to identify when you are dozing off and it will try to wake you up by vibrating the Myo&nbsp;<a href="https://github.com/timmui/WakeUp" target="_blank">https://github.com/timmui/WakeUp</a></li>
+                                <li>MathAlarm- An alarm clock that requires solving math problems to turn off.&nbsp;<a href="https://github.com/timmui/MathAlarm" target="_blank">https://github.com/timmui/MathAlarm</a> </li>
+                            </ul>
+                        </p>
                     </td>
                 </tr>
-                <tr>
+                <tr id="calculator_row">
                     <td class="image_container">
                         <a href="#"><img src="img/calc.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
-                        <p>Universal Calculator</p>
+                        <h2>Universal Calculator</h2>
+                        <p>A calculator that has all the functionalities of a scientific calculator and much more. Its functionalties include slope, line length, midpoint, median, mode, mean, 
+                           cubic root, vector and range calculations as well as binary to decimal conversions and etc. This calculator was coded in Java in the form of an applet.
+                        </p>
+                        <br />
+                        <p>
+                            <span><a onclick="show('calculator','calculator.jar','calculator.calculator.class',450,450);">Click here to see the demo!</a></span>
+                            <span class="demo">
+                                <a href="https://github.com/tonysuu/Calculator" target="_blank">Check it out on Github!</a>
+                            </span>
+                        </p>
                     </td>
                 </tr>
                 <tr>
                     <td class="image_container">
-                        <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                        <a><img src="img/website.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
-                        <p>Project 6</p>
+                        <h2>Personal Website</h2>
+                        <p>This website was written from scratch using HTML, CSS, Javascript and jQuery.</p>
                     </td>
                 </tr>
-                <tr>
+                <tr id="others_row">
                     <td class="image_container">
-                        <a href="#"><img src="img/construction.jpg" style="height: 175px; width: 175px; vertical-align: middle" /></a>
+                        <a href="#"><img src="img/projects.png" style="height: 175px; width: 175px; vertical-align: middle" /></a>
                     </td>
                     <td>
-                        <p>Project 7</p>
+                        <h2>Other Projects</h2>
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                        </ul>
                     </td>
                 </tr>
             </table>
         </div>
         <div id="footer">
             <div id="footer-content">
-                Github | LinkIn | Email <br />
+                Github | LinkIn | <a href="mailto:tonysu1122@hotmail.com">Email</a> <br />
                 &#169 2015 Tony Su. All Rights Reserved.
             </div>
         </div>
