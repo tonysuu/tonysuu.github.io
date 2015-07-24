@@ -156,7 +156,7 @@ iframe {
     font-family: 'Century Gothic', serif;
     font-size: 30px;
     border-bottom: 2px solid black;
-    margin-bottom: 50px;
+    margin-bottom: 1.5em;
 }
 #content-container p {
     font-family: 'Century Gothic', serif;
@@ -176,6 +176,7 @@ p {
 #intro {
     width: 100%;
     height: auto;
+    margin-bottom: 1.5em;
 }
 #running {
     position: absolute;
@@ -233,4 +234,22 @@ p span {
     top: 0px;
     height: 100%;
     width: 100%;
+}
+#language_title {
+    font-family: 'Century Gothic', serif;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    margin-bottom: 1.5em;
+}
+#language_icons {
+    width: 100%;
+    height: auto;
+}
+.sprite li {
+    list-style: none;
+    display: inline-block;
+}
+.sprite li div {
+    height: 72px;
+    width: 145px;
 }

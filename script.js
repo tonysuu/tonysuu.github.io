@@ -103,5 +103,6 @@ $(document).ready(function () {
         location.assign(name);
     });
     //$('body').effect('highlight', {},1000);
+    var padding = ($('#language_icons').width() - 145 * 5) / 2;
 });
 
