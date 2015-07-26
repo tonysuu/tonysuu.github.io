@@ -250,6 +250,62 @@ p span {
     display: inline-block;
 }
 .sprite li div {
-    height: 72px;
-    width: 145px;
+    height: 200px;
+    width: 200px;
 }
+#java_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1265px -5px;
+}
+#csharp_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -635px -5px;
+}
+#javascript_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1685px -5px;
+}
+#jquery_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1475px -5px;
+}
+#android_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -5px -5px;
+}
+#html_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1055px -5px;
+}
+#css_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -845px -5px;
+}
+#angular_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -215px -5px;
+}
+#c_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -425px -5px;
+}
+#mysql_icon {
+    background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -1895px -5px;
+}
+#pebble_icon {
+    background-image: url("img/pebble.png");
+    background-repeat: no-repeat;
+}
+
+

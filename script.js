@@ -103,6 +103,9 @@ $(document).ready(function () {
         location.assign(name);
     });
     //$('body').effect('highlight', {},1000);
-    var padding = ($('#language_icons').width() - 145 * 5) / 2;
+    //alert($('#language_icons').width());
+    /*var padding = ($('#language_icons').width() - 200 * 5) / 2;
+    $('.sprite').css("padding-left",padding+"px");
+    $('.sprite').css("padding-right",padding+"px");*/
 });
 
