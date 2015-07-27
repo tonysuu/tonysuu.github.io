@@ -129,8 +129,7 @@ div a:hover {
     position: fixed;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #7e7e7e;
-    
+    background-color: #7e7e7e;  
 }
 #content {
     width: 100%;
@@ -181,6 +180,7 @@ p {
 #running {
     position: absolute;
     right: -200px;
+    padding-bottom: 5em;
 }
 table {
     width: 100%;
