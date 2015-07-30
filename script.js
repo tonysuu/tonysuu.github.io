@@ -76,10 +76,10 @@ $(document).ready(function () {
     });
     $('#accordion').accordion({ collapsible: true, active: false });
     //first item
-    /*$('#ui-id-1').unbind("click");
+    $('#ui-id-1').unbind("click");
     $('#ui-id-1').click(function () {
         location.assign("index.html");
-    });*/
+    });
     //resume tab
     $('#resume').unbind("click");
     //contacts tab
