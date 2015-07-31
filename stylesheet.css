@@ -306,5 +306,12 @@ p span {
     background-image: url("img/pebble.png");
     background-repeat: no-repeat;
 }
-
-
+#envelope {
+    margin-right: 300px;
+    margin-left: 300px;
+    position: absolute;
+}
+#mailtext {
+    position: relative;
+    top: 200px;
+}

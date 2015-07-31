@@ -107,5 +107,13 @@ $(document).ready(function () {
     /*var padding = ($('#language_icons').width() - 200 * 5) / 2;
     $('.sprite').css("padding-left",padding+"px");
     $('.sprite').css("padding-right",padding+"px");*/
+    //adding envelope img background
+    var width = $('#content').width() - 300*2;
+    var height = $(window).height() - $('#footer').height() - $('#header').height() - 50;
+    var image = document.createElement("img");
+    image.setAttribute("src", "img/mail.jpg");
+    image.setAttribute("width", width.toString());
+    image.setAttribute("height", height.toString());
+    document.getElementById("envelope").appendChild(image);
 });
 
