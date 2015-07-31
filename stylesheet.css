@@ -306,12 +306,11 @@ p span {
     background-image: url("img/pebble.png");
     background-repeat: no-repeat;
 }
-#envelope {
-    margin-right: 300px;
-    margin-left: 300px;
-    position: absolute;
+#fields {
+    width: 600px;
+    float: left;
 }
-#mailtext {
-    position: absolute;
-    background-color: black;
+#envelope {
+    float: right;
+    background-image: url("img/mail.jpg");
 }
