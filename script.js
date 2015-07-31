@@ -109,7 +109,7 @@ $(document).ready(function () {
     $('.sprite').css("padding-right",padding+"px");*/
     //adding envelope img background
     var width = $('#content').width() - 300*2;
-    var height = $(window).height() - $('#footer').height() - $('#header').height() - 50;
+    var height = $(window).height() - $('#footer').height() - $('#header').height() - 80;
     var image = document.createElement("img");
     image.setAttribute("src", "img/mail.jpg");
     image.setAttribute("width", width.toString());

@@ -312,6 +312,6 @@ p span {
     position: absolute;
 }
 #mailtext {
-    position: relative;
-    top: 200px;
+    position: absolute;
+    background-color: black;
 }
