@@ -1,14 +1,3 @@
-<?php
-  if ($_POST["submit"]){
-    $recipient="tonysu1122@hotmail.com";
-    $subject="Sent From tonysu.me";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["sender"];
-    $message=$_POST["message"]
-    $mailBody="Name: $sender\nEmail: $senderEmail\n$message";
-    mail($recipient,$subject,$mailBody,"From: $sender <$senderEmail>");
-  }
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,3 +84,14 @@
 <script type='text/javascript' src='script.js'></script>
 </body>
 </html>
+<?php
+  if ($_POST["submit"]){
+    $recipient="tonysu1122@hotmail.com";
+    $subject="Sent From tonysu.me";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["sender"];
+    $message=$_POST["message"]
+    $mailBody="Name: $sender\nEmail: $senderEmail\n$message";
+    mail($recipient,$subject,$mailBody,"From: $sender <$senderEmail>");
+  }
+?>
