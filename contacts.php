@@ -53,7 +53,7 @@
 <div id="content" ng-app="">
     <div id="fields">
         <div id="fields_name">
-            <p>name: <input type="text" ng-model="first_name" placeholder="hit me"></p>
+            <p style="text-align: center">name: <input type="text" ng-model="first_name" placeholder="hit me"></p>
             <p>{{first_name}}</p>
         </div>
     </div>
