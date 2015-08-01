@@ -51,12 +51,17 @@
     </div>
 </div>
 <div id="content" ng-app="">
-    <!--<div id="fields">
-        <div id="fields_name">
-            <p style="text-align: center">name: <input type="text" ng-model="first_name" placeholder="hit me"></p>
-            <p>{{first_name}}</p>
-        </div>
-    </div> -->
+    <?php
+    if ($_POST["submit"]){
+    $recipient="tonysu1122@hotmail.com";
+    $subject="Sent From tonysu.me";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["sender"];
+    $message=$_POST["message"]
+    $mailBody="Name: $sender\nEmail: $senderEmail\n$message";
+    mail($recipient,$subject,$mailBody);
+    }
+    ?>
     <form method="post" action="contacts.php">
         <label>Name:</label>
         <input name="sender" ng-model="first_name">
@@ -84,14 +89,3 @@
 <script type='text/javascript' src='script.js'></script>
 </body>
 </html>
-<?php
-  if ($_POST["submit"]){
-    $recipient="tonysu1122@hotmail.com";
-    $subject="Sent From tonysu.me";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["sender"];
-    $message=$_POST["message"]
-    $mailBody="Name: $sender\nEmail: $senderEmail\n$message";
-    mail($recipient,$subject,$mailBody,"From: $sender <$senderEmail>");
-  }
-?>
