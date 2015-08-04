@@ -5,8 +5,9 @@
     $sender=$_POST["sender"];
     $senderEmail=$_POST["sender"];
     $message=$_POST["message"];
-    $mailBody="Name";
-    mail($recipient,$subject,$mailBody);
+    $mailBody="Name: " . $sender . "\n" . "Email: " . $senderEmail . "\n" . $message;
+    $headers = 'From: contacts@tonysu.me';
+    mail($recipient,$subject,$mailBody,$headers);
     sleep(1);
 	header('Location: contacts.html'); // Set here redirect page or destination page
   }
