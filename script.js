@@ -109,5 +109,9 @@ $(document).ready(function () {
     $('#envelope').css("height",height+"px");
     $('#envelope').css("width",width+"px");
     $('#envelope').css("background-size",width+"px "+height+"px");
+
+    var inputMessage = $('#input_message').scrollTop();
+    var submitMarginTop = $('form').height() - 80 - inputMessage;
+    $('button').css("margin-top",submitMarginTop+"px");
 });
 
