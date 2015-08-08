@@ -314,15 +314,3 @@ p span {
     float: right;
     background-image: url("img/mail.jpg");
 }
-input , textarea{
-    border: none;
-    width: 600px;
-}
-.input_fields {
-    border-bottom: 1px solid black;
-    width: auto;
-}
-textarea {
-    text-decoration: underline;
-    font-family: "Pacifico";
-}
