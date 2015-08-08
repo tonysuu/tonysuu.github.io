@@ -109,5 +109,13 @@ $(document).ready(function () {
     $('#envelope').css("height",height+"px");
     $('#envelope').css("width",width+"px");
     $('#envelope').css("background-size",width+"px "+height+"px");
+
+    var inputMessage = $('#input_message').offset().top - $(window).scrollTop() + $('textarea').height();
+    var submitMarginTop = $('form').height() - inputMessage;
+    if (submitMarginTop < 0){
+        submitMarginTop = 0;
+    }
+    $("input[name='submit']").css("margin-top",submitMarginTop+"px");
+
 });
 
