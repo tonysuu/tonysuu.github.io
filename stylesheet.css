@@ -313,7 +313,6 @@ p span {
 #envelope {
     float: right;
     background-image: url("img/mail.jpg");
-    font-family: 'Century Gothic', serif;
 }
 input , textarea{
     border: none;
@@ -323,45 +322,7 @@ input , textarea{
     border-bottom: 1px solid black;
     width: auto;
 }
-#from_info {
-    position: relative;
-    top: 4em;
-    left: 6em;
-}
-#from_info p {
-    font-size: 20px;
-    line-height: 1;
-}
-#from_message {
-    position: relative;
-    top: 8em;
-    left: 25em;
-    width: 500px;
-}
-#from_message p {
-    font-family: "Pacifico";
-    font-size: 30px;
+textarea {
     text-decoration: underline;
-}
-#submit_email {
-    width: 200px;
-    height: 200px;
-    background-color: orange;
-}
-button {
-    width: 150px;
-    height: 70px;
-    font-size: 50px;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color: #7e7e7e;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    position: relative;
-    left: 225px;
-}
-form {
-    height: 100%;
+    font-family: "Pacifico";
 }

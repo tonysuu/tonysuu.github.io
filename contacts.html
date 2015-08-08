@@ -53,37 +53,26 @@
 </div>
 <div id="content" ng-app="">
   <div id="fields">
-    <form method="post" action="mailTo.php"  autocomplete="off">
+    <form method="post" action="mailTo.php">
       <div id="input_name" class="input_fields">
         <label>Name:</label>
-        <input name="sender" ng-model="sender_name" placeholder="Hey, what's your name?">
+        <input name="sender" ng-model="name">
       </div>
       <div id="input_email" class="input_fields">
         <label>Email address:</label>
-        <input name="senderEmail" ng-model="sender_email">
+        <input name="senderEmail">
       </div>
       <div id="input_message" class="input_fields">
         <label>Message:</label>
-        <textarea rows="5" cols="20" name="message" ng-model="sender_message" placeholder="Leave me a message please."></textarea>
+        <textarea rows="5" cols="20" name="message"></textarea>
       </div>
-      <button type="submit">Send</button>        
+      <button type="submit">Send your message</button>
     </form>
   </div>
   <div id="envelope">
-    <div id="from_info">
-      <h3>From:</h3>
-      <p>
-        {{sender_name}}<br>
-        {{sender_email}}
-      </p>
-    </div>
-    <div id="from_message">
-      <h1>To: Tony Su</h1>
-      <p>
-        {{sender_message}}
-      </p>
-    </div>
+    <div style="top: 200px"><p>{{name}}</p></div>
   </div>
+</div>
 </div>
 <div id="footer">
   <div id="footer-content">
@@ -93,12 +82,5 @@
   </div>
 </div>
 <script type='text/javascript' src='script.js'></script>
-<script type='text/javascript'>
-  $(document).keydown(function e){
-    if((e.keyCode ? e.keyCode : e.which) == 13){
-      e.preventDefault();
-    }
-  }
-</script>
 </body>
 </html>
