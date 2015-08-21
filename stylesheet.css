@@ -302,7 +302,7 @@ p span {
 #mysql_icon {
     background-image: url("img/sprite.png");
     background-repeat: no-repeat;
-    background-position: -1895px -5px;
+    background-position: -2325px -5px;
 }
 #pebble_icon {
     background-image: url("img/pebble.png");
@@ -366,6 +366,7 @@ input[name="submit"] {
 }
 form {
     height: 100%;
+    margin-left: 20px;
 }
 label {
     color: #7e7e7e;
