@@ -55,11 +55,13 @@ body {
 i {
     color: white;
 }
-#menu-nav {
+/*#menu-nav {
     width: 78%;
-}
+}*/
 #menu-icon {
     margin-left: 20px;
+    width: 200px;
+    height: 50px;
 }
 .menu {
     background-image: url("img/menu_background.jpg");

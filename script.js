@@ -122,6 +122,10 @@ $(document).ready(function () {
     $('#envelope').css("width",width+"px");
     $('#envelope').css("background-size",width+"px "+height+"px");
 
+    var center = $('#header').width() / 2;
+    var marginLeft = center - $('#menu-nav ul li:first-child').width() - 400;
+    $('#menu-nav ul li:nth-child(1)').css("margin-left", marginLeft+"px");
+
     var inputMessage = $('#input_message').offset().top - $(window).scrollTop() + $('textarea').height();
     var submitMarginTop = $('form').height() - inputMessage;
     if (submitMarginTop < 0){
