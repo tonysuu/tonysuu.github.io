@@ -1,6 +1,6 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
+<!DOCTYPE html>
+<html>
+<head>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/icon">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -8,97 +8,97 @@
     <link rel="icon" href="http://www.tonysu.me/favicon.ico" type="image/icon">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
     <title>Tony Su</title>
-  </head>
-  <body  ng-app="header">
+</head>
+<body ng-app="header">
     <div class="menu">
-      <div id="menu_content">
-       <div id="close-button"><img src="img/close_icon.png"/></div>
-       <div id="menu-list">
-         <div id="accordion">
-           <h3><a>Home</a></h3>
-           <div></div>
-           <h3><a>Projects</a></h3>
-           <div>
-             <a href="projects.html#ttt_row"><p>Tic Tac Toe</p></a>
-             <a href="projects.html#mtype_row"><p>MType</p></a>
-             <a href="projects.html#brick_row"><p>Brick Breaker</p></a>
-             <a href="projects.html#android_row"><p>Android Applicatoins</p></a>
-             <a href="projects.html#calculator_row"><p>Universal Calculator</p></a>
-             <a href="projects.html#others_row"><p>Others</p></a>
-           </div>
-           <h3 id="resume"><a href="resume.html">Resume</a></h3>
-           <div></div>
-           <h3 id="contact"><a>Contact Me</a></h3>
-           <div></div>
-         </div>
-       </div>
-     </div>
-   </div>
-   <div id="header" ng-controller="controller" ng-init="active='contacts'">
-    <div id="name">Tony Su</div>
-    <div id="navbar">
-      <div id="menu-icon"><i class="fa fa-bars fa-3x"> <span style="font-family: 'Century Gothic',serif">MENU</span></i></div>
-      <div id="menu-nav">
-        <ul>
-          <li><div class="icon"><a href="index.html" class="link">Home</a></div></li>
-          <li><div class="icon"><a href="projects.html" class="link">Projects</a></div></li>
-          <li><div class="icon"><a href="resume.html" class="link">Resume</a></div></li>
-          <li><div class="icon" id="contacts"><a href="#" class="link">Contact</a></div></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div id="content">
-    <div id="fields">
-      <form method="post" action="mailTo.php"  autocomplete="off">
-        <div id="input_name" class="input_fields">
-          <label>Name:</label>
-          <input name="sender" ng-model="senderName" placeholder="Hey, what's your name?">
+        <div id="menu_content">
+            <div id="close-button"><img src="img/close_icon.png" /></div>
+            <div id="menu-list">
+                <div id="accordion">
+                    <h3><a>Home</a></h3>
+                    <div></div>
+                    <h3><a>Projects</a></h3>
+                    <div>
+                        <a href="projects.html#ttt_row"><p>Tic Tac Toe</p></a>
+                        <a href="projects.html#mtype_row"><p>MType</p></a>
+                        <a href="projects.html#brick_row"><p>Brick Breaker</p></a>
+                        <a href="projects.html#android_row"><p>Android Applicatoins</p></a>
+                        <a href="projects.html#calculator_row"><p>Universal Calculator</p></a>
+                        <a href="projects.html#others_row"><p>Others</p></a>
+                    </div>
+                    <h3 id="resume"><a href="resume.html">Resume</a></h3>
+                    <div></div>
+                    <h3 id="contact"><a>Contact Me</a></h3>
+                    <div></div>
+                </div>
+            </div>
         </div>
-        <div id="input_email" class="input_fields">
-          <label>Email address:</label>
-          <input name="senderEmail" ng-model="senderEmail" placeholder="What's your email?">
+    </div>
+    <div id="header" ng-controller="controller" ng-init="active='contacts'">
+        <div id="name">Tony Su</div>
+        <div id="navbar">
+            <div id="menu-icon"><i class="fa fa-bars fa-3x"> <span style="font-family: 'Century Gothic',serif">MENU</span></i></div>
+            <div id="menu-nav">
+                <ul>
+                    <li><div class="icon"><a href="index.html" class="link">Home</a></div></li>
+                    <li><div class="icon"><a href="projects.html" class="link">Projects</a></div></li>
+                    <li><div class="icon"><a href="resume.html" class="link">Resume</a></div></li>
+                    <li><div class="icon" id="contacts"><a href="#" class="link">Contact</a></div></li>
+                </ul>
+            </div>
         </div>
-        <div id="input_message" class="input_fields">
-          <label>Message:</label>
-          <textarea rows="5" cols="20" name="message" ng-model="senderMessage" placeholder="Leave me a message please."></textarea>
+    </div>
+    <div id="content">
+        <div id="fields">
+            <form method="post" action="mailTo.php" autocomplete="off">
+                <div id="input_name" class="input_fields">
+                    <label>Name:</label>
+                    <input name="sender" ng-model="senderName" placeholder="Hey, what's your name?">
+                </div>
+                <div id="input_email" class="input_fields">
+                    <label>Email address:</label>
+                    <input name="senderEmail" ng-model="senderEmail" placeholder="What's your email?">
+                </div>
+                <div id="input_message" class="input_fields">
+                    <label>Message:</label>
+                    <textarea rows="5" cols="20" name="message" ng-model="senderMessage" placeholder="Leave me a message please."></textarea>
+                </div>
+                <input type="submit" name="submit" value="Send" />
+            </form>
         </div>
-        <input type="submit" name="submit" value="Send"/>   
-      </form>
+        <div id="envelope">
+            <div id="from_info">
+                <h3>From:</h3>
+                <p>
+                    {{senderName}}<br>
+                    {{senderEmail}}
+                </p>
+            </div>
+            <div id="from_message">
+                <h1>To: Tony Su</h1>
+                <p>
+                    {{senderMessage}}
+                </p>
+            </div>
+        </div>
     </div>
-    <div id="envelope">
-      <div id="from_info">
-        <h3>From:</h3>
-        <p>
-          {{senderName}}<br>
-          {{senderEmail}}
-        </p>
-      </div>
-      <div id="from_message">
-        <h1>To: Tony Su</h1>
-        <p>
-          {{senderMessage}}
-        </p>
-      </div>
+    <div id="footer">
+        <div id="footer-content">
+            <a href="https://github.com/tonysuu" target="_blank">Github</a> | <a href="https://ca.linkedin.com/pub/tony-su/a0/6b4/a18" target="_blank">LinkIn</a>
+            | <a href="mailto:tonysu1122@hotmail.com" target="_top">Email</a> <br />
+            &#169 2015 Tony Su. All Rights Reserved.
+        </div>
     </div>
-  </div>
-  <div id="footer">
-    <div id="footer-content">
-      <a href="https://github.com/tonysuu" target="_blank">Github</a> | <a href="https://ca.linkedin.com/pub/tony-su/a0/6b4/a18" target="_blank">LinkIn</a>
-      | <a href="mailto:tonysu1122@hotmail.com" target="_top">Email</a> <br />
-      &#169 2015 Tony Su. All Rights Reserved.
-    </div>
-  </div>
-  <script type='text/javascript' src='script.js'></script>
-  <script type='text/javascript'>
-    $(document).keydown(function e){
-      if((e.keyCode ? e.keyCode : e.which) == 13){
-        e.preventDefault();
-      }
-    }
-  </script>
+    <script type='text/javascript' src='script.js'></script>
+    <script type='text/javascript'>
+        $(document).keydown(function e){
+            if((e.keyCode ? e.keyCode : e.which) == 13){
+                e.preventDefault();
+            }
+        }
+    </script>
 </body>
 </html>
