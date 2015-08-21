@@ -1,9 +1,17 @@
 // JavaScript source code
 var appletId;
 
-if (navigator.userAgent.indexOf("Chrome") < 0 && navigator.userAgent.indexOf("Firefox") < 0) {
+/*if (navigator.userAgent.indexOf("Chrome") < 0 && navigator.userAgent.indexOf("Firefox") < 0) {
     alert("This website is optimized for Chrome and Firefox, some functionalities may not work in IE");
-}
+}*/
+var active = null;
+var app = angular.module('header',[]);
+app.controller('controller',['$scope',function($scope){
+    $scope.$watch('active',function(){
+        active = $scope.active;
+        $('a', '#'+$scope.active).css("color", "black");
+    });
+}]);
 var hide = function () {
     document.getElementById('applet_container').removeChild(document.getElementById(appletId));
     var overlay = document.getElementById('overlay');
@@ -47,13 +55,17 @@ $(document).ready(function () {
     $('#overlay').css("height", dHeight + "px");
     $('.icon').mouseenter(function () {
         /*$(this).fadeTo("fast", 1);*/
-        $(this).css("background-color", "white");
-        $('a', this).css("color", "black");
+        if (this.id != active){
+            $(this).css("background-color", "white");
+            $('a', this).css("color", "black"); 
+        }
     });
     $('.icon').mouseleave(function () {
         /*$(this).fadeTo("fast",0.7);*/
-        $(this).css("background-color", "gray");
-        $('a', this).css("color", "white");
+        if (this.id != active){
+            $(this).css("background-color", "gray");
+            $('a', this).css("color", "white");
+        }
     });
     //display menu
     $('#menu-icon').click(function () {

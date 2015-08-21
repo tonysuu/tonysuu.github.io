@@ -374,3 +374,6 @@ label {
 input, textarea {
     font-size: 2em;
 }
+#home, #projects, #resume_menu, #contacts {
+    background-color: white;
+}
