@@ -12,7 +12,7 @@
   <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
   <title>Tony Su</title>
 </head>
-<body>
+<body  ng-app="header">
   <div class="menu">
     <div id="menu_content">
      <div id="close-button"><img src="img/close_icon.png"/></div>
@@ -37,7 +37,7 @@
      </div>
    </div>
  </div>
- <div id="header" ng-app="header"ng-controller="controller" ng-init="active='contacts'">
+ <div id="header" ng-controller="controller" ng-init="active='contacts'">
   <div id="name">Tony Su</div>
   <div id="navbar">
     <div id="menu-icon"><i class="fa fa-bars fa-3x"> <span style="font-family: 'Century Gothic',serif">MENU</span></i></div>
@@ -51,20 +51,20 @@
     </div>
   </div>
 </div>
-<div id="content" ng-app="">
+<div id="content">
   <div id="fields">
     <form method="post" action="mailTo.php"  autocomplete="off">
       <div id="input_name" class="input_fields">
         <label>Name:</label>
-        <input name="sender" ng-model="sender_name" placeholder="Hey, what's your name?">
+        <input name="sender" ng-model="senderName" placeholder="Hey, what's your name?">
       </div>
       <div id="input_email" class="input_fields">
         <label>Email address:</label>
-        <input name="senderEmail" ng-model="sender_email" placeholder="What's your email?">
+        <input name="senderEmail" ng-model="senderEmail" placeholder="What's your email?">
       </div>
       <div id="input_message" class="input_fields">
         <label>Message:</label>
-        <textarea rows="5" cols="20" name="message" ng-model="sender_message" placeholder="Leave me a message please."></textarea>
+        <textarea rows="5" cols="20" name="message" ng-model="senderMessage" placeholder="Leave me a message please."></textarea>
       </div>
       <input type="submit" name="submit" value="Send"/>   
     </form>
@@ -73,14 +73,14 @@
     <div id="from_info">
       <h3>From:</h3>
       <p>
-        {{sender_name}}<br>
-        {{sender_email}}
+        {{senderName}}<br>
+        {{senderEmail}}
       </p>
     </div>
     <div id="from_message">
       <h1>To: Tony Su</h1>
       <p>
-        {{sender_message}}
+        {{senderMessage}}
       </p>
     </div>
   </div>
